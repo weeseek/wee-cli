@@ -1,0 +1,30 @@
+{
+  "name": "wee-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "wc": "/bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm run build -- --watch",
+    "build": "vite build",
+    "prettier": "prettier --write '**/*.{js,ts,md,json}'",
+    "tag": "node scripts/tag"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.0"
+  },
+  "dependencies": {
+    "ora": "^9.0.0"
+  }
+}
